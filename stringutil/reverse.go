@@ -4,7 +4,7 @@ package stringutil	//package this file is a part of
 //@Reverse returns its argument string reversed
 func Reverse(s string) string {	//creates the function Reverse, which takes one string argument, s, and has the
 				//has the return type of string
-	r:= []rune(s)  	//creates an array of runes (the Go equivalent of char, but using 16 bits rather than 8)
+	r:= []rune(s)  	//creates an array of runes (the Go equivalent of char, but using 32 bits rather than 8 due to UTF-8 encoding)
 			//uses the characters present in string s to initialize
 	for i, j:= 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {	//create variables i and j
 		//i is assigned 0, j is assigned the (length of r)-1
